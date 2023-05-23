@@ -395,81 +395,39 @@ select {
 }
 
 @font-face {
-  font-family: "Rubik";
-  src: local("Rubik Light"), local("Rubik-Light"), url("../../assets/fonts/Rubiklight.woff2") format("woff2"), url("../../assets/fonts/Rubiklight.woff") format("woff"), url("../../assets/fonts/Rubiklight.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Light.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Rubik";
-  src: local("Rubik Light Italic"), local("Rubik-LightItalic"), url("../../assets/fonts/Rubiklightitalic.woff2") format("woff2"), url("../../assets/fonts/Rubiklightitalic.woff") format("woff"), url("../../assets/fonts/Rubiklightitalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik"), local("Rubik-Regular"), url("../../assets/fonts/Rubik.woff2") format("woff2"), url("../../assets/fonts/Rubik.woff") format("woff"), url("../../assets/fonts/Rubik.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik Italic"), local("Rubik-Italic"), url("../../assets/fonts/Rubikitalic.woff2") format("woff2"), url("../../assets/fonts/Rubikitalic.woff") format("woff"), url("../../assets/fonts/Rubikitalic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik Medium"), local("Rubik-Medium"), url("../../assets/fonts/Rubikmedium.woff2") format("woff2"), url("../../assets/fonts/Rubikmedium.woff") format("woff"), url("../../assets/fonts/Rubikmedium.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Rubik";
-  src: local("Rubik Medium Italic"), local("Rubik-MediumItalic"), url("../../assets/fonts/Rubikmediumitalic.woff2") format("woff2"), url("../../assets/fonts/Rubikmediumitalic.woff") format("woff"), url("../../assets/fonts/Rubikmediumitalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik Bold"), local("Rubik-Bold"), url("../../assets/fonts/Rubikbold.woff2") format("woff2"), url("../../assets/fonts/Rubikbold.woff") format("woff"), url("../../assets/fonts/Rubikbold.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Rubik";
-  src: local("Rubik Bold Italic"), local("Rubik-BoldItalic"), url("../../assets/fonts/Rubikbolditalic.woff2") format("woff2"), url("../../assets/fonts/Rubikbolditalic.woff") format("woff"), url("../../assets/fonts/Rubikbolditalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik Black"), local("Rubik-Black"), url("../../assets/fonts/Rubikblack.woff2") format("woff2"), url("../../assets/fonts/Rubikblack.woff") format("woff"), url("../../assets/fonts/Rubikblack.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Black.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik Black Italic"), local("Rubik-BlackItalic"), url("../../assets/fonts/Rubikblackitalic.woff2") format("woff2"), url("../../assets/fonts/Rubikblackitalic.woff") format("woff"), url("../../assets/fonts/Rubikblackitalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
   font-display: swap;
 }
 /**
  * Basic typography style for copy text
  */
 body {
-  font-family: "Rubik", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #000000;
   text-rendering: optimizeSpeed;
 }
 
@@ -502,12 +460,12 @@ body {
 }
 
 .section-inner {
-  max-width: 1280px;
+  max-width: 1420px;
   width: 100%;
   margin: 0 auto;
 }
 .section-inner--narrow {
-  max-width: 1024px;
+  max-width: 1200px;
 }
 
 .vertical-indent--s {
@@ -529,123 +487,42 @@ body {
   justify-content: initial;
 }
 .nav__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 .nav__link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-  transition: color 0.3s ease-in-out;
-}
-.nav__link:before {
-  position: absolute;
-  top: 49px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(244, 192, 56);
-  content: "";
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.nav__link:hover, .nav__link:focus {
-  color: rgb(244, 192, 56);
-}
-
-.header__nav .nav__link {
-  position: relative;
-}
-.header__nav .nav__link:before {
-  position: absolute;
-  top: 49px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(244, 192, 56);
-  content: "";
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.header__nav .nav__link:hover:before, .header__nav .nav__link:focus:before {
-  opacity: 1;
-}
-
-.btn {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 13px 23px;
-  font-size: 16px;
+  justify-content: space-between;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
-  border: 2px solid transparent;
-  border-radius: 48px;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
-.btn__icon {
-  margin-right: 12px;
+.nav__link:is(:hover, :focus) {
+  color: #f50537;
 }
-.btn__icon path {
-  transition: all 0.3s ease-in-out;
+.nav__link:is(:hover, :focus) .nav__icon path {
+  stroke: #f50537;
 }
-.btn--primary {
-  color: rgb(39, 46, 59);
-  background-color: rgb(244, 192, 56);
-}
-.btn--primary .btn__icon path {
-  fill: rgb(39, 46, 59);
-}
-.btn--primary:hover, .btn--primary:focus {
-  background-color: #ecae0d;
-}
-.btn--primary.disabled {
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgb(66, 81, 112);
-  pointer-events: none;
-}
-.btn--primary.disabled .btn__icon path {
-  fill: rgba(255, 255, 255, 0.5);
-}
-.btn--secondary {
-  color: rgb(244, 192, 56);
-  background-color: transparent;
-  border-color: rgb(244, 192, 56);
-}
-.btn--secondary .btn__icon path {
-  fill: rgb(244, 192, 56);
-}
-.btn--secondary:hover, .btn--secondary:focus {
-  color: rgb(32, 34, 42);
-  background-color: rgb(244, 192, 56);
-}
-.btn--secondary:hover .btn__icon path, .btn--secondary:focus .btn__icon path {
-  fill: rgb(32, 34, 42);
-}
-.btn--secondary.disabled {
-  color: rgb(66, 81, 112);
-  background-color: transparent;
-  border-color: rgb(66, 81, 112);
-  pointer-events: none;
-}
-.btn--secondary.disabled .btn__icon path {
-  fill: rgb(66, 81, 112);
+.nav__icon path {
+  transition: all 0.2s ease-in-out;
 }
 
 .lang-picker {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
   position: relative;
+  width: 120px;
+}
+.lang-picker__icon {
+  width: 20px;
+  margin-right: 8px;
+  pointer-events: none;
 }
 .lang-picker__btn {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
   border: none;
   margin: 0;
   padding: 0;
@@ -656,36 +533,20 @@ body {
   font: inherit;
   line-height: normal;
   cursor: pointer;
+}
+.lang-picker__btn.active .lang-picker__text {
+  color: #f50537;
+}
+.lang-picker__wrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 96px;
-  padding: 10px 0;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  border: 1px solid rgb(61, 69, 84);
+  align-items: flex-start;
+  justify-content: initial;
+  flex-direction: column;
 }
-.lang-picker__btn svg {
+.lang-picker__subtitle {
+  font-size: 12px;
+  color: #9e9e9e;
   pointer-events: none;
-}
-.lang-picker__btn svg path {
-  stroke: rgba(255, 255, 255, 0.5);
-}
-.lang-picker__list {
-  position: absolute;
-  width: 96px;
-  padding: 10px 0;
-  left: 0;
-  background-color: rgb(32, 34, 42);
-  border: 1px solid rgb(61, 69, 84);
-  border-top: 0;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.lang-picker__item:not(:last-child) {
-  margin-bottom: 5px;
 }
 .lang-picker__lang {
   border: none;
@@ -698,39 +559,55 @@ body {
   font: inherit;
   line-height: normal;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-  border: 1px solid transparent;
-  transition: color 0.3s ease-out;
-  outline: none;
+  position: absolute;
+  top: 100%;
+  left: 28px;
+  font-size: 12px;
+  transition: color 0.2s ease-in-out;
 }
 .lang-picker__lang:hover, .lang-picker__lang:focus {
-  color: rgb(244, 192, 56);
-}
-.lang-picker__img {
-  margin-right: 8px;
-  pointer-events: none;
+  color: #f50537;
 }
 .lang-picker__text {
-  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
   pointer-events: none;
 }
-.lang-picker.open .lang-picker__btn {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.lang-picker.open .lang-picker__btn svg {
+.lang-picker__arrow.open {
   transform: rotate(180deg);
+}
+.lang-picker__arrow.open path {
+  stroke: #f50537;
+}
+
+.phone-call {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+}
+.phone-call__icon {
+  width: 20px;
+  margin-right: 8px;
+}
+.phone-call__wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: initial;
+  flex-direction: column;
+}
+.phone-call__subtitle {
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #9e9e9e;
+}
+.phone-call__text {
+  font-size: 12px;
 }
 
 .section-header {
-  background-color: rgb(32, 34, 42);
-  border-bottom: 2px solid rgb(39, 46, 59);
+  background-color: #ffffff;
 }
 .section-header .section-inner {
   display: flex;
@@ -738,171 +615,15 @@ body {
   justify-content: initial;
 }
 
-.section-main {
-  flex: 1 0 auto;
-  background-color: rgb(32, 34, 42);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-.form__fieldset {
-  position: relative;
-}
-.form__fieldset.error .form__legend {
-  color: rgb(217, 56, 85);
-}
-.form__fieldset.error .form__input {
-  border-color: rgb(217, 56, 85);
-}
-.form__legend {
-  position: absolute;
-  top: -5px;
-  left: 17px;
-  padding: 0 4px;
-  font-size: 14px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgb(32, 34, 42);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.form__input {
-  width: 100%;
-  padding: 16px 24px;
-  font-size: 14px;
-  line-height: 14px;
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  border: 2px solid rgb(61, 69, 84);
-  border-radius: 24px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-.form__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.form__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.form__input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.form__input:not(:last-child) {
-  margin-bottom: 24px;
-}
-.form__input:hover, .form__input:focus {
-  border-color: rgb(244, 192, 56);
-}
-.form__input:hover + .form__legend, .form__input:focus + .form__legend {
-  color: rgb(244, 192, 56);
-}
-.form__input--disabled {
-  color: rgb(66, 81, 112);
-  border-color: rgb(66, 81, 112);
-  background-color: rgb(39, 46, 59);
-  pointer-events: none;
-}
-.form__input--disabled:hover, .form__input--disabled:focus {
-  color: rgb(66, 81, 112);
-  border-color: rgb(66, 81, 112);
-  background-color: rgb(39, 46, 59);
-}
-.form__input--disabled + .form__legend {
-  display: none;
-}
-
-.section-footer {
-  flex: 0 0 auto;
-  background-color: rgb(32, 34, 42);
-  border-top: 2px solid rgb(39, 46, 59);
-}
-.section-footer .section-inner {
+.header__contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.footer__copy {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 20px;
-}
-.footer__nav .nav__link {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 20px;
-}
-.footer__nav .nav__link:hover, .footer__nav .nav__link:focus {
-  color: rgb(255, 255, 255);
-}
-
-.header__logo {
-  margin-right: 140px;
-}
-.header__right {
-  display: flex;
-  align-items: center;
-  justify-content: initial;
   margin-left: auto;
 }
-.header__lang-picker {
-  margin-right: 24px;
+.header__logo {
+  margin-right: 40px;
 }
-
-.section-hero {
-  height: 100vh;
-  background-color: rgb(32, 34, 42);
-  background-image: url("../../assets/img/hero/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center right;
-}
-
-.hero__title {
-  width: 704px;
-  margin-bottom: 40px;
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 60px;
-  color: rgb(255, 255, 255);
-}
-.hero__btn {
-  display: inline-flex;
-}
-
-.footer__copy {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 20px;
-}
-.footer__nav .nav__link {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 20px;
-}
-.footer__nav .nav__link:hover, .footer__nav .nav__link:focus {
-  color: rgb(255, 255, 255);
-}
-
-.section-connection .section-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.connection__title {
-  margin-bottom: 38px;
-  font-size: 32px;
-  font-weight: 500;
-}
-.connection__img {
-  align-self: flex-end;
-}
-.connection__content {
-  width: 500px;
-}
-.connection__btn {
-  align-self: flex-start;
+.header__phone-call {
+  margin-right: 40px;
 }/*# sourceMappingURL=main.css.map */

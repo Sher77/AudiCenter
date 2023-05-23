@@ -1,0 +1,24 @@
+.phone-call {
+  @include flex(center);
+
+  &__icon {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  &__wrap {
+    @include flex(flex-start);
+
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: $fs-2xs;
+    color: $color-text-lighten;
+  }
+
+  &__text {
+    font-size: $fs-2xs;
+  }
+}

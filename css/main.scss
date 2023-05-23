@@ -20,8 +20,9 @@
 // 4. Components
 @import
   'components/nav',
-  'components/button',
-  'components/lang-picker';
+  'components/lang-picker',
+  'components/phone-call',
+  'components/button';
 
 // 5. Layout-related sections
 @import
@@ -32,8 +33,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home',
-  'pages/connection';
+  'pages/home';
 
 // 7. Themes
 @import

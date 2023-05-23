@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.section-header {
+  background-color: $color-white;
+
+  .section-inner {
+    @include flex(center);
+  }
+}
+
+.header {
+  &__contacts {
+    @include flex(center, space-between);
+    margin-left: auto;
+  }
+  
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__phone-call {
+    margin-right: 40px;
+  }
+}

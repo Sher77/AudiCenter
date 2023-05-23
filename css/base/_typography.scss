@@ -3,8 +3,8 @@
  */
 
 body {
-  @include rubik;
+  @include montserrat;
 
-  color: $color-white;
+  color: $color-black;
   text-rendering: optimizeSpeed;
 }

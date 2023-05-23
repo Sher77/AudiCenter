@@ -1,0 +1,35 @@
+.nav {
+  &__list {
+    @include flex(center);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    @include flex(center, space-between);
+
+    font-size: $fs-xs;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+
+    &:is(:hover, :focus) {
+      color: $color-brand;
+
+      .nav__icon {
+        path {
+          stroke: $color-brand;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    path {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

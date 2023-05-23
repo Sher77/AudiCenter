@@ -1,0 +1,67 @@
+.lang-picker {
+  @include flex(center);
+  
+  position: relative;
+  width: 120px;
+
+  &__icon {
+    width: 20px;
+    margin-right: 8px;
+    pointer-events: none;
+  }
+
+  &__btn {
+    @include flex(center);
+    @include btnReset;
+
+    &.active {
+      .lang-picker__text {
+        color: $color-brand;
+      }
+    }
+  }
+
+  &__wrap {
+    @include flex(flex-start);
+
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    font-size: $fs-2xs;
+    color: $color-text-lighten;
+    pointer-events: none;
+  }
+
+  &__lang {
+    @include btnReset;
+    
+    position: absolute;
+    top: 100%;
+    left: 28px;
+    font-size: $fs-2xs;
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $color-brand;
+    }
+  }
+
+  &__text {
+    @include flex(center, space-between);
+
+    font-size: $fs-2xs;
+    pointer-events: none;
+  }
+
+  &__arrow {
+    &.open {
+      transform: rotate(180deg);
+
+      path {
+        stroke: $color-brand;
+      }
+    }
+  }
+}
