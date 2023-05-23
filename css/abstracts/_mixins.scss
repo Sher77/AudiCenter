@@ -25,10 +25,11 @@
   }
 }
 
-@mixin flex($align, $justify:initial) {
+@mixin flex($align, $justify:initial, $dir: initial) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
+  flex-direction: $dir;
 }
 
 @mixin btnReset {

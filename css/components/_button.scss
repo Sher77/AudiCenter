@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+  @include btnReset;
+
+  &--primary {
+    padding: 18px 30px;
+    font-size: $fs-xs;
+    color: $color-white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid $color-white;
+  }
+}

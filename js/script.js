@@ -39,3 +39,19 @@ langBtnList.forEach(btn => {
     lang = document.querySelector('.lang-picker__text-lang').textContent;
   })
 })
+
+const swiper = new Swiper('.hero-swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
