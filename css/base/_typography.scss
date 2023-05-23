@@ -1,0 +1,10 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  @include rubik;
+
+  color: $color-white;
+  text-rendering: optimizeSpeed;
+}

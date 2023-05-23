@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin rubik {
+  font-family: $text-font-stack;
+}
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+      $query: if(
+          type-of($raw-query) == 'string',
+          unquote($raw-query),
+          inspect($raw-query)
+      );
+
+      @media #{$query} {
+          @content;
+      }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin flex($align, $justify:initial) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin btnReset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+}

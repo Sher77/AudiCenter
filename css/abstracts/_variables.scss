@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+$text-font-stack: 'Rubik', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+$code-font-stack: 'Montserrat', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+/// Colors
+$color-white: rgb(255, 255, 255) !default; // Текст и элементы на тёмном фоне
+$color-white-50t: rgb(255, 255, 255, 0.5) !default; // Текст и элементы на тёмном фоне
+$color-shark: rgba(32, 34, 42) !default; // Основной фон, текст и элементы на светлом фоне
+$color-shark-50t: rgba(32, 34, 42, 0.5) !default; // Второстепенный текст на светлом фоне
+$color-alto: rgba(224, 224, 224); // Разделители на светлом фоне
+$color-bright-gray: rgba(61, 69, 84); // Разделители на тёмном фоне
+$color-ebony-clay: rgba(39, 46, 59); // Подложка
+$color-fiord: rgba(66, 81, 112); // Неактивные элементы на темном фоне
+$color-tango: rgba(244, 117, 35); // Горячие цены
+$color-brand: rgb(244, 192, 56) !default; // Основной акцентный цвет
+$color-forest-green: rgba(60, 191, 39); // Позитивные индикаторы
+$color-curios-blue: rgba(45, 160, 224); // Промежуточные индикаторы
+$color-cerise-red: rgba(217, 56, 85); // Негативные индикаторы
+
+/// Редкость предметов
+
+$color-arcana: rgba(74, 221, 50); // Arcana
+$color-immortal: rgba(255, 206, 80); // Необычайно редкие, Immortal
+$color-secret: rgba(237, 66, 43); // Тайные
+$color-legendary: rgba(207, 48, 156); // Засекреченные, Legendary
+$color-mythical: rgba(133, 51, 237); // Запрещенные, Mythical
+$color-rare: rgba(39, 92, 228); // Армейские, Rare
+$color-industrial: rgba(106, 178, 244); // Промышленные, Uncommon
+$color-shirp: rgba(180, 194, 215); // Ширпотреб, Common
+
+/// Font sizes
+$fs-3xs: 10px;
+$fs-2xs: 12px;
+$fs-xs: 14px;
+$fs-s: 16px;
+$fs-m: 18px;
+$fs-l: 20px;
+$fs-x: 22px;
+$fs-xl: 24px;
+$fs-2xl: 32px;
+$fs-3xl: 40px;
+$fs-4xl: 48px;
+$fs-5xl: 56px;
+
+/// Container's maximum width
+$max-width: 1280px   !default;
+$max-width--narrow: 1024px !default;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+) !default;
