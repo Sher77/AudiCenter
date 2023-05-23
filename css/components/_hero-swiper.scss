@@ -48,6 +48,12 @@
       transform: rotate(180deg);
     }
   }
+
+  .swiper-pagination {
+    &-bullet {
+      background-color: $color-white;
+    }
+  }
 }
 
 .q5 {

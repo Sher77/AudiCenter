@@ -659,6 +659,9 @@ body {
 .hero-swiper__arrow-prev {
   transform: rotate(180deg);
 }
+.hero-swiper .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
 
 .q5 {
   background-image: url("../../assets/img/audiq5.webp");
