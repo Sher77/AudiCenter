@@ -908,4 +908,21 @@ body {
   position: absolute;
   top: -20px;
   left: -100px;
+}
+
+.section-accessories .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+
+.accessories__link--big {
+  width: 1100px;
+}
+.accessories__link .cars__link-text {
+  color: #f50537;
+}
+.accessories__link .cars__link-icon {
+  fill: #f50537;
 }/*# sourceMappingURL=main.css.map */
