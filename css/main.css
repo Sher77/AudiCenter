@@ -928,6 +928,10 @@ body {
   fill: #f50537;
 }
 
+.section-news {
+  background-color: #f2f2f2;
+}
+
 .news__head .cars__title--wrap {
   display: flex;
   flex-direction: column;
@@ -1010,4 +1014,37 @@ body {
 }
 .news-swiper__btn.swiper-button-disabled {
   opacity: 0.4;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.contacts-list__icon {
+  margin-bottom: 30px;
+}
+.contacts-list__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+}
+.contacts-list__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.contacts-list__description {
+  max-width: 220px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9e9e9e;
 }/*# sourceMappingURL=main.css.map */
