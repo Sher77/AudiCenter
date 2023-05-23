@@ -3,6 +3,11 @@
 // -----------------------------------------------------------------------------
 
 .section-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
   background-color: $color-white;
 
   .section-inner {
