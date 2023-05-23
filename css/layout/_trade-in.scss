@@ -1,0 +1,48 @@
+.section-trade-in {
+  @include flex(center, space-between);
+
+  height: 450px;
+}
+
+.trade-in {
+  &__left,
+  &__right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 100px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__left {
+    @include flex(flex-start, center, column);
+
+    background-image: url("../../assets/img/bg-item.png");
+  }
+
+  &__right {
+    @include flex(flex-end, center, column);
+
+    background-color: $color-brand;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: $fs-5xl;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: $color-white;
+  }
+
+  &__link {
+    &--round {
+      position: absolute;
+      top: -20px;
+      left: -100px;
+    }
+  }
+}
