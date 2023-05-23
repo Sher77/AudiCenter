@@ -40,7 +40,7 @@ langBtnList.forEach(btn => {
   })
 })
 
-const swiper = new Swiper('.hero-swiper', {
+const heroSwiper = new Swiper('.hero-swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
@@ -51,7 +51,16 @@ const swiper = new Swiper('.hero-swiper', {
     delay: 5000,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hero-swiper__arrow-next',
+    prevEl: '.hero-swiper__arrow-prev',
+  },
+});
+
+const newsSwiper = new Swiper(".news-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.news-swiper__btn--next',
+    prevEl: '.news-swiper__btn--prev',
   },
 });
