@@ -1,0 +1,38 @@
+.section-connection {
+  background-color: $color-black;
+
+  .section-inner {
+    @include flex(flex-start, center);
+  }
+}
+
+.connection {
+  &__map {
+    margin-right: 50px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 60px;
+    font-size: $fs-2xl;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    font-size: $fs-m;
+    font-weight: 300;
+    color: $color-white;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

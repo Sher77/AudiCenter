@@ -1047,4 +1047,37 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: #9e9e9e;
+}
+
+.section-connection {
+  background-color: #000000;
+}
+.section-connection .section-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: initial;
+}
+
+.connection__map {
+  margin-right: 50px;
+}
+.connection__title {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.connection__list:not(:last-child) {
+  margin-bottom: 40px;
+}
+.connection__item {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.connection__item:not(:last-child) {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
