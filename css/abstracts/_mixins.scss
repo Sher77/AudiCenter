@@ -25,7 +25,7 @@
   }
 }
 
-@mixin flex($align, $justify:initial, $dir: initial) {
+@mixin flex($align:initial, $justify:initial, $dir: initial) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
