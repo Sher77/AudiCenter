@@ -64,3 +64,10 @@ const newsSwiper = new Swiper(".news-swiper", {
     prevEl: '.news-swiper__btn--prev',
   },
 });
+
+
+const footerUp = document.querySelector('.footer__up');
+
+footerUp.addEventListener('click', event => {
+  window.scrollTo(pageYOffset, 0);
+});

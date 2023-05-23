@@ -331,6 +331,7 @@ time, mark, audio, video {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -1080,4 +1081,79 @@ body {
 }
 .connection__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.section-footer {
+  background-color: #000000;
+  border-top: 1px solid #ffffff;
+}
+
+.footer__logo {
+  margin-right: 40px;
+}
+.footer__head {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  margin-bottom: 30px;
+}
+.footer__nav .nav__link {
+  color: #ffffff;
+}
+.footer__up {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer__up svg {
+  fill: #ffffff;
+}
+.footer__body {
+  padding: 40px 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__foot {
+  display: flex;
+  align-items: center;
+}
+.footer__foot .phone-call__icon {
+  fill: #ffffff;
+}
+.footer__foot .header__phone-call {
+  color: #ffffff;
+}
+.footer__foot .lang-picker__icon {
+  stroke: #ffffff;
+}
+.footer__foot .lang-picker__text-lang {
+  color: #ffffff;
+}
+.footer__foot .header__contacts {
+  margin-left: initial;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+}
+.footer__copy {
+  margin-left: auto;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

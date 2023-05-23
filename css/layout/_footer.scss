@@ -1,3 +1,85 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.section-footer {
+  background-color: $color-black;
+  border-top: 1px solid $color-white;
+}
+
+.footer {
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__head {
+    @include flex(center);
+
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    .nav__link {
+      color: $color-white;
+    }
+  }
+
+  &__up {
+    @include btnReset;
+
+    margin-left: auto;
+    font-size: $fs-xs;
+    text-transform: uppercase;
+    color: $color-white;
+
+    svg {
+      fill: $color-white;
+    }
+  }
+
+  &__body {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    font-size: $fs-xs;
+    font-weight: 300;
+    color: $color-white;
+    line-height: 1.5;
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &__foot {
+    display: flex;
+    align-items: center;
+
+    .phone-call__icon {
+      fill: $color-white;
+    }
+    
+    .header__phone-call {
+      color: $color-white;
+    }
+
+    .lang-picker__icon {
+      stroke: $color-white;
+    }
+    
+    .lang-picker__text-lang {
+      color: $color-white;
+    }
+
+    .header__contacts {
+      margin-left: initial;
+    }
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__copy {
+    margin-left: auto;
+    color: $color-white;
+  }
+}
